@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="nav"> LISTA DE TAREFAS </div>
+        <div class="divs">
+            <div>
+                <div class="form">
+                    <div>
+                        <input type="text" id="titulo" class="in" placeholder="Título">
+                        <textarea class="in" placeholder="Descrição" id="descri" cols="20" rows="5"></textarea>
+                    </div>
+                    <button class="btn" onclick="addtarefa()"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                        </svg></button>
+                </div>
+            </div>
+            <div>
+                <input type="text" id="pesquisar" class="in" placeholder="Pesquisar">
+
+                <button onclick="pesquisarid()" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg></button>
+            </div>
+        </div>
+    </header>
+    <table class='table table-striped table-hover table-bordered' id="tabela">
+        <tr>
+            <th class="check">Check-in</th>
+            <th>#</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+
+    </table>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
